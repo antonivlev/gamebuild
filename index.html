@@ -5,7 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | HorseRacing</title>
     <style>
-    #centered {
+    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
+	#centered {
       text-align: center;
       padding-left: 0;
       padding-right: 0;
@@ -14,16 +15,14 @@
       display: block;
       width: 960px;
     }
-    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
     </style>
   </head>
   <body>
-    <div id="centered">
-    <h1>Some text</h1>  
+	<div id="centered">
     <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
     <script type='text/javascript'>
   var Module = {
-    TOTAL_MEMORY: 524288000,
+    TOTAL_MEMORY: 419430400,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
     dataUrl: "Release/GameBuild_working.data",
@@ -32,6 +31,6 @@
   };
 </script>
 <script src="Release/UnityLoader.js"></script>
-  </div>
+	</div>
   </body>
 </html>
